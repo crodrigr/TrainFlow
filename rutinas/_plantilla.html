@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+  PLANTILLA DE RUTINA
+  1. Copia este archivo con otro nombre (por ejemplo rutinas/full-body-3-dias.html).
+  2. Cambia título, descripción y textos.
+  3. Cada día usa una clase de color: day-lunes, day-martes, day-miercoles,
+     day-jueves, day-viernes. Para sábado o domingo, reutiliza un color.
+  4. Agrega una tarjeta en index.html que enlace a la nueva página.
+  Borra estos comentarios cuando termines.
+-->
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="DESCRIPCIÓN CORTA DE LA RUTINA">
+  <title>NOMBRE DE LA RUTINA</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="back" href="../index.html">← Todas las rutinas</a>
+      <h1>Nombre de la <span class="hl">rutina</span></h1>
+      <p class="lead">Objetivo de la rutina</p>
+      <ul class="chips">
+        <li>Equipo 1</li>
+        <li>Equipo 2</li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Menú de días: un enlace por día. La clase d-… define el color. -->
+  <nav class="daynav" aria-label="Días de la rutina">
+    <ul>
+      <li><a class="d-lunes" href="#lunes">Lun</a></li>
+      <li><a class="d-martes" href="#martes">Mar</a></li>
+      <li><a class="d-miercoles" href="#miercoles">Mié</a></li>
+      <li><a class="d-jueves" href="#jueves">Jue</a></li>
+      <li><a class="d-viernes" href="#viernes">Vie</a></li>
+    </ul>
+  </nav>
+  <!-- El menú tiene 5 columnas. Si la rutina tiene otro número de días,
+       cambia repeat(5, 1fr) en .daynav ul dentro de css/styles.css. -->
+
+  <main class="wrap">
+
+    <section class="card" aria-labelledby="reglas">
+      <h2 id="reglas">Reglas generales</h2>
+      <ul>
+        <li>Regla 1</li>
+        <li>Regla 2</li>
+      </ul>
+    </section>
+
+    <section class="day day-lunes" id="lunes" aria-labelledby="h-lunes">
+      <div class="day-head">
+        <h2 id="h-lunes">Lunes</h2>
+        <p>Enfoque del día</p>
+      </div>
+      <div class="day-body">
+
+        <h3 class="block-title">Nombre del bloque</h3>
+        <ul class="ex-list">
+          <li><span class="ex-name">Ejercicio</span><span class="ex-sets">4 × 8–12</span></li>
+          <li><span class="ex-name">Ejercicio con nota</span><span class="ex-sets">3 × 10</span><p class="ex-note">Por lado</p></li>
+        </ul>
+
+        <!-- Bloque sin numerar (calentamiento): agrega la clase no-num -->
+        <!-- <ul class="ex-list no-num"> … </ul> -->
+
+        <!-- Aviso dentro del día -->
+        <!-- <p class="note">Texto del aviso.</p> -->
+
+      </div>
+    </section>
+
+    <!-- Más días: copia el <section class="day …"> completo. -->
+
+    <!-- Información adicional colapsable -->
+    <section id="info" aria-labelledby="h-info">
+      <h2 id="h-info" class="visually-title">Más información</h2>
+      <details>
+        <summary>Título de la sección</summary>
+        <div class="inner">
+          <p>Contenido.</p>
+        </div>
+      </details>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <!-- Póster opcional: <a class="btn" href="../img/NOMBRE.webp">Ver póster</a> -->
+      <p>Frase o pie de página</p>
+    </div>
+  </footer>
+
+</body>
+</html>
