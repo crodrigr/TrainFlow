@@ -414,6 +414,13 @@ main {
   font-size: 0.9rem;
 }
 
+.ex-note a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px; /* objetivo táctil cómodo */
+  font-weight: 600;
+}
+
 .no-num .ex-note {
   grid-column: 1 / -1;
 }
