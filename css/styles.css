@@ -490,6 +490,13 @@ details .inner > :last-child {
   text-align: center;
 }
 
+.footer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
